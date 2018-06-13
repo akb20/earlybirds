@@ -10,8 +10,9 @@ body {
 
 a {
   color: #000;
+  transition: all 0.2s ease;
   &:hover {
-    color: #cb4434 !important;
+    color: #f13636 !important;
   }
 }
 
@@ -63,7 +64,7 @@ figure {
   }
   .title {
     color: white;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: -0.01em;
   }
   svg {
@@ -120,6 +121,13 @@ figure {
   // background-color: #f7f7f7;
   // border-top: 1px solid #f5f5f5;
   // border-bottom: 1px solid #f5f5f5;
+}
+
+.events {
+  height: 318px;
+  background: url(../assets/events.jpg) center center;
+  background-size: cover;
+  color: white;
 }
 
 .footer {
