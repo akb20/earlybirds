@@ -5,6 +5,7 @@
  *
  * Copyright (c) 2018 Daniel Eden
  */
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,400i,700,800,900");
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -2503,29 +2504,33 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 18px;
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
   font-weight: 300;
-  color: #000; }
+  color: #222; }
 
 a {
   color: #000;
   transition: all 0.2s ease; }
   a:hover {
-    color: #f13636 !important; }
+    color: #555 !important; }
 
 .navbar {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04); }
 
 .navbar-item {
-  color: #000;
+  color: #222;
   font-size: 1.1rem;
   text-transform: capitalize; }
 
 .navbar-link::after {
-  border-color: #000;
+  border-color: #222;
   margin-top: -0.375em;
   right: 1.125em; }
 
@@ -2533,17 +2538,24 @@ a {
   margin-right: 5px; }
 
 .logo {
-  font-size: 1.2rem;
-  font-weight: 400; }
+  font-size: 1.3rem;
+  font-weight: 300; }
   .logo span {
     font-weight: 700; }
 
 figure {
   -webkit-filter: grayscale(0.2); }
 
+img {
+  display: block; }
+
+.section-img {
+  box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05), 0 19px 38px 0 rgba(161, 170, 180, 0.35); }
+
 .hero {
-  background: url(../assets/hero.jpg) center center;
+  background: url(../assets/hero2.jpg) no-repeat center center;
   background-size: cover;
+  background-color: #222;
   color: white;
   margin-top: 52px;
   position: relative;
@@ -2554,20 +2566,23 @@ figure {
     bottom: -50px;
     right: 0; }
   .hero .title {
-    color: white;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: -0.01em; }
   .hero svg {
     color: #ececec;
     display: inline; }
   .hero .subtitle {
-    color: white;
-    font-weight: 300; }
+    font-weight: 200; }
     .hero .subtitle span {
       font-style: italic; }
 
+.card {
+  transition: all 0.2s ease; }
+  .card:hover {
+    box-shadow: 0 5px 6px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+
 .section-heading {
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: -0.01em; }
 
 .body-text-link {
@@ -2575,7 +2590,7 @@ figure {
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000; }
+  color: #222; }
   .body-text-link:hover {
     color: #cb4434; }
   .body-text-link:after {
@@ -2598,4 +2613,7 @@ figure {
 
 .footer {
   color: white;
-  background-color: #333; }
+  background-color: #222; }
+  .footer p,
+  .footer li {
+    color: #a3a3a3; }

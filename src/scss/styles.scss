@@ -1,33 +1,41 @@
 @import './animations.scss';
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,400i,700,800,900');
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 18px;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  //   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
   font-weight: 300;
-  color: #000;
+  color: #222;
 }
 
 a {
   color: #000;
   transition: all 0.2s ease;
   &:hover {
-    color: #f13636 !important;
+    color: #555 !important;
   }
 }
 
+// nav styles
 .navbar {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
 }
 
 .navbar-item {
-  color: #000;
+  color: #222;
   font-size: 1.1rem;
   text-transform: capitalize;
 }
 .navbar-link::after {
-  border-color: #000;
+  border-color: #222;
   margin-top: -0.375em;
   right: 1.125em;
 }
@@ -37,21 +45,34 @@ a {
 }
 
 .logo {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 300;
   // margin-left: -10px;
   span {
     font-weight: 700;
   }
 }
 
+// image styles
+
 figure {
   -webkit-filter: grayscale(0.2);
 }
 
+img {
+  display: block;
+}
+
+.section-img {
+  box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05),
+    0 19px 38px 0 rgba(161, 170, 180, 0.35);
+}
+
+// hero styles
 .hero {
-  background: url(../assets/hero.jpg) center center;
+  background: url(../assets/hero2.jpg) no-repeat center center;
   background-size: cover;
+  background-color: #222;
   color: white;
   margin-top: 52px;
   position: relative;
@@ -63,8 +84,8 @@ figure {
     right: 0;
   }
   .title {
-    color: white;
-    font-weight: 500;
+    // color: white;
+    font-weight: 700;
     letter-spacing: -0.01em;
   }
   svg {
@@ -72,8 +93,8 @@ figure {
     display: inline;
   }
   .subtitle {
-    color: white;
-    font-weight: 300;
+    // color: white;
+    font-weight: 200;
     span {
       font-style: italic;
       // color: #cb4434;
@@ -81,14 +102,21 @@ figure {
   }
 }
 
-.section-heading {
-  font-weight: 100;
-  letter-spacing: -0.01em;
-  // margin: 1.2rem 0;
+// programs section styles
+.programs {
 }
 
-.programs {
-  // margin-top: -4rem;
+.card {
+  transition: all 0.2s ease;
+  &:hover {
+    box-shadow: 0 5px 6px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  }
+}
+
+.section-heading {
+  font-weight: 200;
+  letter-spacing: -0.01em;
+  // margin: 1.2rem 0;
 }
 
 .body-text-link {
@@ -96,7 +124,7 @@ figure {
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000;
+  color: #222;
   &:hover {
     color: #cb4434;
   }
@@ -130,7 +158,12 @@ figure {
   color: white;
 }
 
+//footer styles
 .footer {
   color: white;
-  background-color: #333;
+  background-color: #222;
+  p,
+  li {
+    color: #a3a3a3;
+  }
 }
