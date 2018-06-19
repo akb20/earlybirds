@@ -2528,6 +2528,8 @@ a {
   color: #222;
   font-size: 1.1rem;
   text-transform: capitalize; }
+  .navbar-item .careers {
+    color: red !important; }
 
 .navbar-link::after {
   border-color: #222;
@@ -2543,8 +2545,8 @@ a {
   .logo span {
     font-weight: 700; }
 
-figure {
-  -webkit-filter: grayscale(0.2); }
+.logo-img {
+  margin-right: 5px; }
 
 img {
   display: block; }
@@ -2579,7 +2581,7 @@ img {
 .card {
   transition: all 0.2s ease; }
   .card:hover {
-    box-shadow: 0 5px 6px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+    box-shadow: 0 7px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
 
 .section-heading {
   font-weight: 200;
