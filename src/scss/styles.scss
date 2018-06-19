@@ -114,6 +114,7 @@ img {
 
 .card {
   transition: all 0.2s ease;
+  cursor: pointer;
   &:hover {
     box-shadow: 0 7px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   }
