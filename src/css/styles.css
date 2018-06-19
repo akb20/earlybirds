@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2018 Daniel Eden
  */
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,400i,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,400,400i,700,800,900");
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -2522,7 +2522,7 @@ a {
 
 .navbar {
   background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04); }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #fff; }
 
 .navbar-item {
   color: #222;
@@ -2583,6 +2583,7 @@ img {
 
 .section-heading {
   font-weight: 200;
+  font-style: italic;
   letter-spacing: -0.01em; }
 
 .body-text-link {
@@ -2599,6 +2600,9 @@ img {
     margin-left: 0.5rem;
     text-decoration: none; }
 
+.card .card-image {
+  border-bottom: 1px solid rgba(10, 10, 10, 0.1); }
+
 .card .title {
   text-transform: capitalize; }
 
@@ -2612,8 +2616,12 @@ img {
   color: white; }
 
 .footer {
+  height: 230px;
   color: white;
   background-color: #222; }
   .footer p,
   .footer li {
     color: #a3a3a3; }
+  .footer svg {
+    font-size: 2rem;
+    margin: 1rem 0.5rem; }

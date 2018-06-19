@@ -1,5 +1,5 @@
 @import './animations.scss';
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,400i,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,400,400i,700,800,900');
 
 * {
   margin: 0;
@@ -26,7 +26,8 @@ a {
 // nav styles
 .navbar {
   background-color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #fff;
 }
 
 .navbar-item {
@@ -47,7 +48,6 @@ a {
 .logo {
   font-size: 1.3rem;
   font-weight: 300;
-  // margin-left: -10px;
   span {
     font-weight: 700;
   }
@@ -115,6 +115,7 @@ img {
 
 .section-heading {
   font-weight: 200;
+  font-style: italic;
   letter-spacing: -0.01em;
   // margin: 1.2rem 0;
 }
@@ -137,6 +138,9 @@ img {
 }
 
 .card {
+  .card-image {
+    border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+  }
   .title {
     text-transform: capitalize;
   }
@@ -160,10 +164,15 @@ img {
 
 //footer styles
 .footer {
+  height: 230px;
   color: white;
   background-color: #222;
   p,
   li {
     color: #a3a3a3;
+  }
+  svg {
+    font-size: 2rem;
+    margin: 1rem 0.5rem;
   }
 }
