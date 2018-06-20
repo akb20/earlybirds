@@ -14,10 +14,10 @@ body {
 }
 
 a {
-  color: #000;
+  color: #222;
   transition: all 0.2s ease;
   &:hover {
-    color: #686868 !important;
+    color: #2795c4 !important;
   }
 }
 
@@ -122,6 +122,7 @@ img {
 }
 
 .section-heading {
+  // font-family: 'Oswald', sans-serif;
   font-weight: 200;
   font-style: italic;
   letter-spacing: -0.01em;
