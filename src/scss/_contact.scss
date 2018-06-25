@@ -1,0 +1,29 @@
+.contact {
+  margin-bottom: 5rem;
+}
+.contact-form {
+  margin-top: 5rem;
+}
+
+.field-name {
+  margin-top: 2rem;
+}
+
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus,
+.textarea.is-active,
+.textarea.is-focused,
+.textarea:active,
+.textarea:focus {
+  border-color: $eb-blue;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.1);
+}
+
+.is-submit {
+  background-color: $eb-blue !important;
+  &:hover {
+    background-color: darken($eb-blue, 20%);
+  }
+}

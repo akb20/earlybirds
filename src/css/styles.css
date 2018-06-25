@@ -2504,6 +2504,31 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.contact {
+  margin-bottom: 5rem; }
+
+.contact-form {
+  margin-top: 5rem; }
+
+.field-name {
+  margin-top: 2rem; }
+
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus,
+.textarea.is-active,
+.textarea.is-focused,
+.textarea:active,
+.textarea:focus {
+  border-color: #289ac9;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.1); }
+
+.is-submit {
+  background-color: #289ac9 !important; }
+  .is-submit:hover {
+    background-color: #175974; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -2518,7 +2543,7 @@ a {
   color: #222;
   transition: all 0.2s ease; }
   a:hover {
-    color: #2795c4 !important; }
+    color: #289ac9 !important; }
 
 figure {
   -webkit-filter: grayscale(0.2); }
@@ -2559,18 +2584,19 @@ img {
   box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05), 0 19px 38px 0 rgba(161, 170, 180, 0.35); }
 
 .hero {
+  height: 420px;
   background: url(../assets/hero2.jpg) no-repeat center center;
   background-size: cover;
-  background-color: #222;
-  color: white;
+  background-color: #dbdbdb;
   margin-top: 52px;
   position: relative;
   overflow: hidden;
   -webkit-filter: grayscale(0.3); }
-  .hero .hero-small {
-    position: absolute;
-    bottom: -50px;
-    right: 0; }
+  .hero .hero-body {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .hero .title {
     font-weight: 700;
     letter-spacing: -0.01em; }
@@ -2587,7 +2613,7 @@ img {
   cursor: pointer;
   transition: all 0.3s ease; }
   .card:hover {
-    margin-top: -5px; }
+    margin-top: -7px; }
 
 .section-heading {
   font-weight: 200;
@@ -2633,3 +2659,5 @@ img {
   .footer svg {
     font-size: 2rem;
     margin: 1rem 0.5rem; }
+  .footer .footer-link {
+    color: #a3a3a3; }

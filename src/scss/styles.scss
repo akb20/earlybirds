@@ -1,4 +1,6 @@
 @import './animations.scss';
+@import './vars.scss';
+@import './contact.scss';
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,400,400i,700,800,900');
 
 * {
@@ -17,7 +19,7 @@ a {
   color: #222;
   transition: all 0.2s ease;
   &:hover {
-    color: #2795c4 !important;
+    color: #289ac9 !important;
   }
 }
 
@@ -75,21 +77,21 @@ img {
 
 // hero styles
 .hero {
+  height: 420px;
   background: url(../assets/hero2.jpg) no-repeat center center;
   background-size: cover;
-  background-color: #222;
-  color: white;
+  background-color: #dbdbdb;
   margin-top: 52px;
   position: relative;
   overflow: hidden;
   -webkit-filter: grayscale(0.3);
-  .hero-small {
-    position: absolute;
-    bottom: -50px;
-    right: 0;
+  .hero-body {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .title {
-    // color: white;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
@@ -98,7 +100,6 @@ img {
     display: inline;
   }
   .subtitle {
-    // color: white;
     font-weight: 200;
     span {
       font-style: italic;
@@ -117,7 +118,7 @@ img {
   transition: all 0.3s ease;
   &:hover {
     // box-shadow: 0 7px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    margin-top: -5px;
+    margin-top: -7px;
   }
 }
 
@@ -183,5 +184,8 @@ img {
   svg {
     font-size: 2rem;
     margin: 1rem 0.5rem;
+  }
+  .footer-link {
+    color: #a3a3a3;
   }
 }
