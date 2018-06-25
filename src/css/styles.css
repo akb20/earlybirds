@@ -2504,6 +2504,16 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.reader {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.bold {
+  margin: 1rem 0; }
+
+.leader {
+  margin-top: 3rem; }
+
 .contact {
   margin-bottom: 5rem; }
 
@@ -2620,6 +2630,9 @@ img {
   font-style: italic;
   letter-spacing: -0.01em; }
 
+.text-link {
+  color: #289ac9; }
+
 .body-text-link {
   font-weight: 700;
   font-size: 0.9rem;
@@ -2627,7 +2640,7 @@ img {
   text-transform: uppercase;
   color: #222; }
   .body-text-link:hover {
-    color: #cb4434; }
+    color: #289ac9; }
   .body-text-link:after {
     content: '\f105';
     font-family: FontAwesome;

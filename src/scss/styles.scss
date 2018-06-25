@@ -1,5 +1,6 @@
 @import './animations.scss';
 @import './vars.scss';
+@import './reader.scss';
 @import './contact.scss';
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,400,400i,700,800,900');
 
@@ -130,6 +131,10 @@ img {
   // margin: 1.2rem 0;
 }
 
+.text-link {
+  color: $eb-blue;
+}
+
 .body-text-link {
   font-weight: 700;
   font-size: 0.9rem;
@@ -137,7 +142,7 @@ img {
   text-transform: uppercase;
   color: #222;
   &:hover {
-    color: #cb4434;
+    color: #289ac9;
   }
   &:after {
     content: '\f105';
