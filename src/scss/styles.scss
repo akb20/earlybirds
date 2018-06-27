@@ -1,26 +1,62 @@
 @import './animations.scss';
 @import './vars.scss';
-@import './reader.scss';
+@import './read.scss';
 @import './contact.scss';
-@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,400,400i,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
 
+// base styles
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
-  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
   font-weight: 300;
   color: #222;
 }
 
+// link styles
 a {
   color: #222;
-  transition: all 0.2s ease;
   &:hover {
-    color: #289ac9 !important;
+    color: $eb-blue !important;
+  }
+}
+
+.text-link {
+  color: $eb-blue;
+}
+
+.body-text-link {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+  &:hover {
+    color: #289ac9;
+  }
+  &:after {
+    content: '>';
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+}
+
+// button styles
+.is-cta {
+  width: 270px;
+  background-color: $eb-blue;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  border: 0;
+  margin-bottom: 5rem;
+  &:hover {
+    background-color: darken($eb-blue, 10%);
+    color: white !important;
   }
 }
 
@@ -38,14 +74,20 @@ img {
 .navbar {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
-  // box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #fff;
 }
 
 .navbar-item {
   color: #222;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: capitalize;
 }
+
+.navbar-dropdown a:hover {
+  svg {
+    fill: $eb-blue;
+  }
+}
+
 .navbar-link::after {
   border-color: #222;
   margin-top: -0.375em;
@@ -53,7 +95,7 @@ img {
 }
 
 .navbar-item svg {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .logo {
@@ -101,7 +143,7 @@ img {
     display: inline;
   }
   .subtitle {
-    font-weight: 200;
+    font-weight: 300;
     span {
       font-style: italic;
       // color: #cb4434;
@@ -109,8 +151,23 @@ img {
   }
 }
 
-// programs section styles
-.programs {
+// program section styles
+.program {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.showcase {
+  margin-top: 3rem;
+}
+
+.quote {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.signature {
+  margin-top: 1rem;
 }
 
 .card {
@@ -125,31 +182,10 @@ img {
 
 .section-heading {
   // font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
   letter-spacing: -0.01em;
   // margin: 1.2rem 0;
-}
-
-.text-link {
-  color: $eb-blue;
-}
-
-.body-text-link {
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #222;
-  &:hover {
-    color: #289ac9;
-  }
-  &:after {
-    content: '\f105';
-    font-family: FontAwesome;
-    margin-left: 0.5rem;
-    text-decoration: none;
-  }
 }
 
 .card {
@@ -179,9 +215,9 @@ img {
 
 //footer styles
 .footer {
-  height: 230px;
+  height: 280px;
   color: white;
-  background-color: #222;
+  background-color: #2b2b2b;
   p,
   li {
     color: #a3a3a3;
@@ -192,5 +228,15 @@ img {
   }
   .footer-link {
     color: #a3a3a3;
+  }
+  .qcode {
+    width: 90px;
+    display: block;
+    margin: 0.4rem auto 0 auto;
+  }
+  .column {
+    &:nth-child(2) {
+      // border-left: 1px solid #2e2e2e;
+    }
   }
 }
