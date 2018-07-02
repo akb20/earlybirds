@@ -2580,8 +2580,15 @@ a {
     margin-left: 0.5rem;
     text-decoration: none; }
 
+.narrow {
+  width: 670px;
+  margin: 0 auto; }
+
+.theatre-feature {
+  margin: 1rem 0 2rem 0;
+  box-shadow: none; }
+
 .is-cta {
-  width: 270px;
   background-color: #289ac9;
   text-transform: uppercase;
   font-weight: 400;
@@ -2692,6 +2699,9 @@ img {
 
 .card p {
   font-weight: 300; }
+
+.theatre-heading {
+  margin: 1.5rem 0 1rem 0; }
 
 .events {
   height: 318px;
