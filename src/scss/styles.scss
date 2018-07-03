@@ -2,6 +2,7 @@
 @import './vars.scss';
 @import './read.scss';
 @import './contact.scss';
+@import './theatre.scss';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
 
 // base styles
@@ -17,9 +18,7 @@ body {
   color: #222;
 }
 
-p {
-  // margin: 1rem 0;
-}
+// spacing classes
 
 .spaced {
   margin: 0.7rem 0;
@@ -31,6 +30,10 @@ p {
 
 .columns-spaced {
   margin-top: 3rem;
+}
+
+.margin-top {
+  margin-top: 5rem;
 }
 
 // link styles
@@ -62,14 +65,9 @@ a {
 }
 
 .narrow {
-  width: 670px;
-  margin: 0 auto;
-}
-
-.theatre-feature {
-  margin: 1rem 0 1.5rem 0;
-  box-shadow: none;
-  position: relative;
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1rem 0;
 }
 
 // button styles
@@ -226,18 +224,6 @@ img {
 
 .theatre-heading {
   margin: 1.5rem 0 0 0;
-}
-
-.event-meta {
-  margin-bottom: -4.5rem;
-  margin-left: 1rem;
-  z-index: 99;
-  position: relative;
-  color: white;
-}
-
-.event-heading {
-  margin: 1rem 0;
 }
 
 .partners {

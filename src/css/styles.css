@@ -2549,6 +2549,16 @@ ul li span {
     background-color: #20799e;
     color: white !important; }
 
+.event-meta {
+  margin-bottom: -4.2rem;
+  margin-left: 0.5rem;
+  z-index: 99;
+  position: relative;
+  color: white; }
+
+.event-heading {
+  margin: 1rem 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -2567,6 +2577,9 @@ body {
 
 .columns-spaced {
   margin-top: 3rem; }
+
+.margin-top {
+  margin-top: 5rem; }
 
 a {
   color: #222; }
@@ -2590,13 +2603,9 @@ a {
     text-decoration: none; }
 
 .narrow {
-  width: 670px;
-  margin: 0 auto; }
-
-.theatre-feature {
-  margin: 1rem 0 1.5rem 0;
-  box-shadow: none;
-  position: relative; }
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1rem 0; }
 
 .is-cta {
   background-color: #289ac9;
@@ -2712,16 +2721,6 @@ img {
 
 .theatre-heading {
   margin: 1.5rem 0 0 0; }
-
-.event-meta {
-  margin-bottom: -4.5rem;
-  margin-left: 1rem;
-  z-index: 99;
-  position: relative;
-  color: white; }
-
-.event-heading {
-  margin: 1rem 0; }
 
 .events {
   height: 318px;
