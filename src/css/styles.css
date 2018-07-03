@@ -2586,7 +2586,8 @@ a {
 
 .theatre-feature {
   margin: 1rem 0 1.5rem 0;
-  box-shadow: none; }
+  box-shadow: none;
+  position: relative; }
 
 .is-cta {
   background-color: #289ac9;
@@ -2702,6 +2703,16 @@ img {
 
 .theatre-heading {
   margin: 1.5rem 0 0 0; }
+
+.event-meta {
+  margin-bottom: -4.5rem;
+  margin-left: 1rem;
+  z-index: 99;
+  position: relative;
+  color: white; }
+
+.event-heading {
+  margin: 1rem 0; }
 
 .events {
   height: 318px;

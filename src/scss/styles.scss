@@ -17,6 +17,10 @@ body {
   color: #222;
 }
 
+p {
+  // margin: 1rem 0;
+}
+
 // link styles
 a {
   color: #222;
@@ -53,6 +57,7 @@ a {
 .theatre-feature {
   margin: 1rem 0 1.5rem 0;
   box-shadow: none;
+  position: relative;
 }
 
 // button styles
@@ -209,6 +214,18 @@ img {
 
 .theatre-heading {
   margin: 1.5rem 0 0 0;
+}
+
+.event-meta {
+  margin-bottom: -4.5rem;
+  margin-left: 1rem;
+  z-index: 99;
+  position: relative;
+  color: white;
+}
+
+.event-heading {
+  margin: 1rem 0;
 }
 
 .partners {
