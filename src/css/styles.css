@@ -2570,7 +2570,7 @@ body {
   color: #222; }
 
 .spaced {
-  margin: 0.7rem 0; }
+  margin: 20px 0; }
 
 .img-spaced {
   margin-top: 3rem; }
@@ -2578,13 +2578,19 @@ body {
 .columns-spaced {
   margin-top: 3rem; }
 
-.margin-top {
-  margin-top: 5rem; }
+.mt {
+  margin-top: 6rem; }
+
+.narrow {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1rem 0; }
 
 a {
   color: #222; }
   a:hover {
-    color: #289ac9 !important; }
+    color: #289ac9 !important;
+    background-color: #fff; }
 
 .text-link {
   color: #289ac9; }
@@ -2601,11 +2607,6 @@ a {
     content: '>';
     margin-left: 0.5rem;
     text-decoration: none; }
-
-.narrow {
-  max-width: 720px;
-  margin: 2rem auto;
-  padding: 1rem 0; }
 
 .is-cta {
   background-color: #289ac9;
@@ -2624,6 +2625,9 @@ figure {
 img {
   display: block; }
 
+.section-img {
+  box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05), 0 19px 38px 0 rgba(161, 170, 180, 0.35); }
+
 .navbar {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04); }
@@ -2635,6 +2639,10 @@ img {
 
 .navbar-dropdown a:hover svg {
   fill: #289ac9; }
+
+.dropdown-item:hover,
+.navbar-item:hover {
+  background-color: #fff !important; }
 
 .navbar-link::after {
   border-color: #222;
@@ -2650,14 +2658,9 @@ img {
   .logo span {
     font-weight: 700; }
 
-.logo-img {
-  margin-right: 5px; }
-
-.navbar-item img {
-  max-height: 2rem; }
-
-.section-img {
-  box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05), 0 19px 38px 0 rgba(161, 170, 180, 0.35); }
+.navbar-burger span {
+  height: 2px;
+  width: 18px; }
 
 .hero {
   height: 420px;
@@ -2718,15 +2721,6 @@ img {
 
 .card p {
   font-weight: 300; }
-
-.theatre-heading {
-  margin: 1.5rem 0 0 0; }
-
-.events {
-  height: 318px;
-  background: url(../assets/events.jpg) center center;
-  background-size: cover;
-  color: white; }
 
 .footer {
   height: 280px;

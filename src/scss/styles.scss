@@ -3,6 +3,7 @@
 @import './read.scss';
 @import './contact.scss';
 @import './theatre.scss';
+// google fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
 
 // base styles
@@ -21,7 +22,7 @@ body {
 // spacing classes
 
 .spaced {
-  margin: 0.7rem 0;
+  margin: 20px 0;
 }
 
 .img-spaced {
@@ -32,8 +33,14 @@ body {
   margin-top: 3rem;
 }
 
-.margin-top {
-  margin-top: 5rem;
+.mt {
+  margin-top: 6rem;
+}
+
+.narrow {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1rem 0;
 }
 
 // link styles
@@ -41,6 +48,7 @@ a {
   color: #222;
   &:hover {
     color: $eb-blue !important;
+    background-color: #fff;
   }
 }
 
@@ -62,12 +70,6 @@ a {
     margin-left: 0.5rem;
     text-decoration: none;
   }
-}
-
-.narrow {
-  max-width: 720px;
-  margin: 2rem auto;
-  padding: 1rem 0;
 }
 
 // button styles
@@ -93,6 +95,11 @@ img {
   display: block;
 }
 
+.section-img {
+  box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05),
+    0 19px 38px 0 rgba(161, 170, 180, 0.35);
+}
+
 // nav styles
 .navbar {
   background-color: #fff;
@@ -109,6 +116,11 @@ img {
   svg {
     fill: $eb-blue;
   }
+}
+
+.dropdown-item:hover,
+.navbar-item:hover {
+  background-color: #fff !important;
 }
 
 .navbar-link::after {
@@ -128,17 +140,10 @@ img {
     font-weight: 700;
   }
 }
-.logo-img {
-  margin-right: 5px;
-}
 
-.navbar-item img {
-  max-height: 2rem;
-}
-
-.section-img {
-  box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05),
-    0 19px 38px 0 rgba(161, 170, 180, 0.35);
+.navbar-burger span {
+  height: 2px;
+  width: 18px;
 }
 
 // hero styles
@@ -207,7 +212,6 @@ img {
   font-weight: 300;
   font-style: italic;
   letter-spacing: -0.01em;
-  // margin: 1.2rem 0;
 }
 
 .card {
@@ -220,23 +224,6 @@ img {
   p {
     font-weight: 300;
   }
-}
-
-.theatre-heading {
-  margin: 1.5rem 0 0 0;
-}
-
-.partners {
-  // background-color: #f7f7f7;
-  // border-top: 1px solid #f5f5f5;
-  // border-bottom: 1px solid #f5f5f5;
-}
-
-.events {
-  height: 318px;
-  background: url(../assets/events.jpg) center center;
-  background-size: cover;
-  color: white;
 }
 
 //footer styles
