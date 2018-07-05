@@ -2549,15 +2549,8 @@ ul li span {
     background-color: #20799e;
     color: white !important; }
 
-.event-meta {
-  margin-bottom: -4.2rem;
-  margin-left: 0.5rem;
-  z-index: 99;
-  position: relative;
-  color: white; }
-
 .event-heading {
-  margin: 1rem 0; }
+  margin: 2rem 0 3rem 0; }
 
 * {
   margin: 0;
@@ -2570,7 +2563,7 @@ body {
   color: #222; }
 
 .spaced {
-  margin: 20px 0; }
+  margin: 0 0 20px 0; }
 
 .img-spaced {
   margin-top: 3rem; }
@@ -2581,6 +2574,12 @@ body {
 .mt {
   margin-top: 6rem; }
 
+.mt-s {
+  margin-top: 4rem; }
+
+.mb {
+  margin-bottom: 1.5rem; }
+
 .narrow {
   max-width: 720px;
   margin: 2rem auto;
@@ -2590,7 +2589,7 @@ a {
   color: #222; }
   a:hover {
     color: #289ac9 !important;
-    background-color: #fff; }
+    background-color: transparent; }
 
 .text-link {
   color: #289ac9; }
