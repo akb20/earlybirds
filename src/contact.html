@@ -68,81 +68,87 @@
         <br>
         <p>If you'd like to schedule a demo class, or have any other enquires, please contact us. Thanks!</p>
 
-        <div class="field field-name">
-          <label class="label">Name</label>
-          <div class="control has-icons-left">
-            <input class="input" type="text" placeholder="Your name">
-            <span class="icon is-small is-left">
-              <span data-jam="user" data-fill="#dbdbdb"></span>
-            </span>
-          </div>
-        </div>
+        <form action="https://formspree.io/info@earlybirds.cn" method="POST">
 
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control has-icons-left">
-            <input class="input" type="text" placeholder="Your Email">
-            <span class="icon is-small is-left">
-              <span data-jam="envelope" data-fill="#dbdbdb"></span>
-            </span>
+          <div class="field field-name">
+            <label class="label">Name</label>
+            <div class="control has-icons-left">
+              <input class="input" type="text" name="name" placeholder="Your name">
+              <span class="icon is-small is-left">
+                <span data-jam="user" data-fill="#dbdbdb "></span>
+              </span>
+            </div>
           </div>
-        </div>
 
-        <div class="field">
-          <label class="label">Message</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Your message"></textarea>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left">
+              <input class="input" name="_replyto" type="text" placeholder="Your Email">
+              <span class="icon is-small is-left">
+                <span data-jam="envelope" data-fill="#dbdbdb"></span>
+              </span>
+            </div>
           </div>
-        </div>
 
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button is-submit">Send Message</button>
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" name="message" placeholder="Your message"></textarea>
+            </div>
           </div>
-        </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-submit" type="submit" value="Send">Send Message</button>
+            </div>
+          </div>
+
+
+        </form>
+
 
       </div>
     </div>
   </div>
 
-  <footer class="footer is-centered">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <h2 class="is-size-4">
+  <footer class="footer is-centered ">
+    <div class="container ">
+      <div class="columns ">
+        <div class="column ">
+          <h2 class="is-size-4 ">
             <span>EARLY</span>BiRDS</h2>
           <p>Pudong: 366 Hongfeng Road</p>
           <p>Puxi: 1966 Changning Road</p>
           <p>021-65235550 / 17717536936</p>
           <p>info@earlybirds.com</p>
         </div>
-        <div class="column has-text-centered">
-          <h2 class="is-size-4">Follow Us</h2>
-          <img class="qcode" src="./assets/q.jpg" alt="">
+        <div class="column has-text-centered ">
+          <h2 class="is-size-4 ">Follow Us</h2>
+          <img class="qcode " src="./assets/q.jpg " alt=" ">
           </p>
         </div>
-        <div class="column column-right has-text-right has-text-centered-touch">
-          <h2 class="is-size-4">Site Map</h2>
+        <div class="column column-right has-text-right has-text-centered-touch ">
+          <h2 class="is-size-4 ">Site Map</h2>
           <p>
-            <a class="footer-link" href="./about">About Us</a>
+            <a class="footer-link " href="./about ">About Us</a>
           </p>
           <p>
-            <a class="footer-link" href="./partners">Academic Partners</a>
+            <a class="footer-link " href="./partners ">Academic Partners</a>
           </p>
           <p>
-            <a class="footer-link" href="./careers">Careers</a>
+            <a class="footer-link " href="./careers ">Careers</a>
           </p>
           <p>
-            <a class="footer-link" href="./contact">Get In Touch</a>
+            <a class="footer-link " href="./contact ">Get In Touch</a>
           </p>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/jam-icons@2.0.0/js/jam.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/jam-icons@2.0.0/js/jam.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+  <script src="./js/main.js "></script>
 
   <script>
     new WOW().init();
