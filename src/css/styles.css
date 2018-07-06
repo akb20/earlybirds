@@ -2641,7 +2641,8 @@ figure {
   -webkit-filter: grayscale(0.2); }
 
 img {
-  display: block; }
+  display: block;
+  background-color: #dbdbdb; }
 
 .section-img {
   box-shadow: 0 15px 12px 0 rgba(161, 170, 180, 0.05), 0 19px 38px 0 rgba(161, 170, 180, 0.35); }
