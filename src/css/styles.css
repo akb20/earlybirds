@@ -2552,6 +2552,25 @@ ul li span {
 .event-heading {
   margin: 2rem 0 3rem 0; }
 
+.hero-careers {
+  height: 420px;
+  background: #289ac9;
+  background: linear-gradient(90deg, #289ac9 40%, #32c1fb 100%); }
+
+.hero-careers-body {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.careers-info {
+  background-color: #fff;
+  margin-top: -3rem;
+  padding: 1.5rem; }
+
+.title-careers {
+  font-weight: 700; }
+
 * {
   margin: 0;
   padding: 0; }

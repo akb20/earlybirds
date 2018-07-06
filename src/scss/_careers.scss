@@ -1,0 +1,26 @@
+.hero-careers {
+  height: 420px;
+  background: rgb(40, 154, 201);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 154, 201, 1) 40%,
+    rgba(50, 193, 251, 1) 100%
+  );
+}
+
+.hero-careers-body {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers-info {
+  background-color: #fff;
+  margin-top: -3rem;
+  padding: 1.5rem;
+}
+
+.title-careers {
+  font-weight: 700;
+}
