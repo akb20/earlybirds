@@ -45,13 +45,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.narrow {
-  max-width: 720px;
-  margin: 2rem auto;
-  padding: 1rem 0;
-}
-
-// link styles
+// link and text styles
 a {
   color: #222;
   &:hover {
@@ -78,6 +72,12 @@ a {
     margin-left: 0.5rem;
     text-decoration: none;
   }
+}
+
+.section-heading {
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: -0.01em;
 }
 
 // button styles
@@ -173,6 +173,7 @@ img {
   .title {
     font-weight: 700;
     letter-spacing: -0.01em;
+    text-align: left;
   }
   svg {
     color: #ececec;
@@ -211,15 +212,8 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    // box-shadow: 0 7px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     margin-top: -7px;
   }
-}
-
-.section-heading {
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: -0.01em;
 }
 
 .card {
@@ -236,7 +230,6 @@ img {
 
 //footer styles
 .footer {
-  height: 280px;
   color: white;
   background-color: #2b2b2b;
   p,
@@ -255,9 +248,48 @@ img {
     display: block;
     margin: 0.4rem auto 0 auto;
   }
-  .column {
-    &:nth-child(2) {
-      // border-left: 1px solid #2e2e2e;
+}
+
+// selection color
+::selection {
+  background: $eb-blue;
+}
+::-moz-selection {
+  background: $eb-blue;
+}
+
+// media queries
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .mt {
+    margin-top: 4rem;
+  }
+  .columns-spaced {
+    margin-top: 1rem;
+  }
+  .title,
+  .subtitle {
+    text-align: left;
+    margin-bottom: 6rem;
+  }
+  .hero,
+  .hero-body {
+    height: 300px;
+  }
+  .hero {
+    background: url(../assets/hero2-sm.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .card {
+    &:hover {
+      margin-top: 0;
+      -webkit-filter: brightness(0.95);
+      filter: brightness(0.95);
     }
+  }
+  .footer {
+    text-align: center;
   }
 }
