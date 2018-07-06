@@ -2546,7 +2546,7 @@ ul li span {
   border: 0;
   color: white; }
   .is-submit:hover {
-    background-color: #20799e;
+    background-color: #20799e !important;
     color: white !important; }
 
 .event-heading {

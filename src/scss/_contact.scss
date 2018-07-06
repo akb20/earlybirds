@@ -36,7 +36,7 @@
   border: 0;
   color: white;
   &:hover {
-    background-color: darken($eb-blue, 10%);
+    background-color: darken($eb-blue, 10%) !important;
     color: white !important;
   }
 }
