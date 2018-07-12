@@ -2571,6 +2571,11 @@ ul li span {
 .title-careers {
   font-weight: 700; }
 
+.about-thumb {
+  width: 140px;
+  height: auto;
+  margin-right: 0.7rem; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -2606,7 +2611,8 @@ a {
     background-color: transparent; }
 
 .text-link {
-  color: #289ac9; }
+  color: #289ac9;
+  font-weight: 400; }
 
 .body-text-link {
   font-weight: 700;
@@ -2638,7 +2644,7 @@ a {
     color: white !important; }
 
 figure {
-  -webkit-filter: grayscale(0.2); }
+  filter: grayscale(0.2); }
 
 img {
   display: block;
